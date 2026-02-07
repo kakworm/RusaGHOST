@@ -117,7 +117,7 @@ RandomTalk : nonoverlap_pool
 	
 	"\0\s[0]I'm so glad to see you, %(username)!\e"
 	
-	"\![raise,OnRusaWindowcheck,%(rusawindowcheck)]"
+	// "\![raise,OnRusaWindowcheck,%(rusawindowcheck)]" commented for bug checking.
 	
 }
 
