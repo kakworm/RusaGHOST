@@ -1,0 +1,50 @@
+// Code gotten from Aster/nyx_os thank you so much
+
+SetAppGroups //set arrays for program groups. mostly so that its easier to add to or remove from
+{
+    BROWSE = "Chrome,Firefox,Edge,Opera,Pale Moon,Safari,Vivaldi"
+    BROWSEexe = "chrome.exe,firefox.exe,MicrosoftEdge.exe,opera.exe,palemoon.exe,safari.exe,vivaldi.exe"
+
+    MUSIC = "AIMP,Spotify,iTunes,Windows Media Player,foobar2000,Winamp"
+    MUSICexe = "AIMP.exe,Spotify.exe,iTunes.exe,wmplayer.exe,foobar2000.exe,winamp.exe"
+
+    ART = "Clip Studio Paint,Paint Tool SAI,Paint Tool SAI 2,Krita,Photoshop,ArtRage,MyPaint,Artweaver,Adobe Fresco"
+    ARTexe = "CLIPStudioPaint.exe,sai.exe,sai2.exe,krita.exe,Photoshop.exe,artrage.exe,mypaint.exe,Artweaver.exe,Fresco.exe"
+    
+    VECTOR = "Adobe Illustrator,Inkscape,CorelDRAW"
+    VECTORexe = "Illustrator.exe,inkscape.exe,CorelDRW.exe"
+
+    ANTIVIRUS = "Kaspersky,Avast,ESET,Dr.Web,McAfee,Avira,ClamWin,Malwarebytes"
+    ANTIVIRUSexe = "AVP.exe,AvastSvc.exe,ekrn.exe,dwservice.exe,mcafee-security.exe,Avira.ServiceHost.exe,freshclam.exe,MBAMService.exe"
+
+    TEXT = "Microsoft Word,LibreOffice Writer"
+    TEXTexe = "winword.exe,swriter.exe"
+
+    TABLES = "Microsoft Excel,LibreOffice Calc"
+    TABLESexe = "excel.exe,scalc.exe"
+
+    SLIDES = "Microsoft PowerPoint,LibreOffice Impress"
+    SLIDESexe = "powerpnt.exe,simpress.exe"
+}
+
+ProcessCheck //trying again with a process.dll SAORI because window_info isn't very reliable with a variety of software
+{
+    appName = "" //huge thanks to UTD server for helping me get my hands on this bad boy
+    SetAppGroups //reset appgroups arrays in case we've changed them earlier
+    _procList = SPLIT(_argv[0],',') //split processes into a general array because ASEARCH won't work on simple arrays
+    //_argv[0] - processes, _argv[1] - software names
+    foreach _procList; _process
+    {
+        if FUNCTIONEX('process.dll','exist',_process) == 1 //process is present
+        {
+            _nameList = _argv[1] // i'm not sure if argv[1][n] is a thing that can Work             
+            _procNum = ASEARCH(_process,_procList)
+            appName = _nameList[_procNum] //find index of current process in array and assign the software name with the same index
+            break
+        }
+    }
+    --
+    //_appPresent
+    if appName != ""; 1
+    else; 0
+}
