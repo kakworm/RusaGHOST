@@ -1,0 +1,10 @@
+Charset,UTF-8
+install,823653540
+homeurl_found,1
+surfacecount,18
+homeurl,https://raw.githubusercontent.com/kakworm/RusaGHOST/master/Updates/Rusa/
+update_result,OK(2)
+firstboot,823662170
+update_time,823747014
+commitmemorysize,888148
+lastboot,823746992
