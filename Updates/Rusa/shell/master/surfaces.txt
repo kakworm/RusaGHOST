@@ -173,6 +173,9 @@ element0,overlay,surface0.png,0,0
 //Main Character Embarrassed pose
 surface1
 {
+collision0,90,48,183,84,Head
+collision1,98,116,187,155,Face
+
 element0,overlay,surface1501.png,0,0
 //--Talking-----------------------------------------------------------------------------
 //This block deals with your ghost's mouth moving as it speaks to you. 
@@ -201,6 +204,9 @@ element0,overlay,surface1501.png,0,0
 //Main Character Surprised pose
 surface2
 {
+collision0,90,48,183,84,Head
+collision1,98,116,187,155,Face
+
 element0,overlay,surface1502.png,0,0
 //--Blinking---------------------------------------------------------------------------
 //Here's the animation block to set up a random blink.
@@ -215,29 +221,44 @@ element0,overlay,surface1502.png,0,0
 //Main Character Upset Pose
 surface3
 {
+	collision0,90,48,183,84,Head
+collision1,98,116,187,155,Face
+
 element0,overlay,surface1503.gif,0,0
 }
 
 //Main Character Sad/Disappointed pose
 surface4
 {
+	collision0,90,48,183,84,Head
+collision1,98,116,187,155,Face
+
 element0,overlay,surface1504.png,0,0
 }
 
 //Main Character Smiling pose
 surface5
 {
+	collision0,90,48,183,84,Head
+collision1,98,116,187,155,Face
+
 element0,overlay,surface1505.gif,0,0
 }
 
 //Main Character Contented pose
 surface6
 {
+	collision0,90,48,183,84,Head
+collision1,98,116,187,155,Face
+
 element0,overlay,surface1506.png,0,0
 }
 //scary rusa exe aaaaaa
 surface7
 {
+	collision0,90,48,183,84,Head
+collision1,98,116,187,155,Face
+
 element0,overlay,surface1507.png,0,0
 }
 
