@@ -117,7 +117,7 @@ RandomTalk : nonoverlap_pool
 	
 	"\0\s[0]I'm so glad to see you, %(username)!\e"
 	
-	// "\![raise,OnRusaWindowcheck,%(rusawindowcheck)]" commented for bug checking.
+	 "\![raiseother,Rusa,OnRusaWindowcheck,%(rusawindowcheck)]"
 	
 }
 
@@ -320,11 +320,10 @@ rusawindowcheck: nonoverlap_pool
 
 if ProcessCheck(MUSICexe,MUSIC) == 1
 {
- "\0\s[0]Oh! You like music %(username)? What's your favorite genre?\![open,inputbox,OnGenreAsk,-1]\e"
+ "\0\s[0]Oh! You like music %(username)? How nice!\e"
  
  "\0\s[0]You have such great music taste, %(username)!\e"
 }
-else; RandomTalk
 
 
 if ProcessCheck(ARTexe,ART) == 1
@@ -333,16 +332,6 @@ if ProcessCheck(ARTexe,ART) == 1
 	
 	"\0\s[0]Oooh draw me!! Draw RUSA!!!\e"
 	}
-	else; RandomTalk
-}
 
-
-OnGenreAsk
-{
-	LikedGenre = reference0
-	"\0\s[6]I enjoy %(LikedGenre) too.\e"
-	
-	"\0\s[6]I've never heard of %(LikedGenre), but im sure its great.\e"
-	
 }
 
