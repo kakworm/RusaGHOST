@@ -6,7 +6,7 @@ file,ghost/master/anchor.dic741d310802a65efec21cfec394cd631bsize=5221date=202
 file,ghost/master/bootend.dic93ff1d1975f7dff74b89a2d20667fca6size=38057date=2026-02-06T06:06:29
 file,ghost/master/commu.diceaa3653bf0ad6a6c9712dd41ed3fa11dsize=6741date=2023-09-28T20:36:05
 file,ghost/master/descript.txt59b1ba6cc03fea0152900f95fbeee67csize=2610date=2026-02-06T05:32:44
-file,ghost/master/etc.dica1db3384de3dfc109a19a7a26787bb01size=37523date=2026-02-06T18:57:53
+file,ghost/master/etc.dicd64b310a25559a64c1950cd4e69e5e38size=37525date=2026-02-06T23:31:14
 file,ghost/master/gomi.dll51fe9597398db01e684a0f9d52c63242size=13312date=2004-06-01T20:00:04
 file,ghost/master/mciaudior.dllb1082bccd2aac2017f7936baf2d967b3size=29696date=2003-03-13T16:23:26
 file,ghost/master/menu.dicb6ae679d1f111aa7e2bd2e81a2db8037size=35902date=2026-02-06T19:35:00
