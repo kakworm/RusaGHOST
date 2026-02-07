@@ -115,6 +115,12 @@ RandomTalk : nonoverlap_pool
 	
 	"\0\s[6]We will always be best friends!\e"
 	
+	"\0\s[6]I hope your day has gone well.\e"
+	
+	"\0\s[0]Let's do something fun together!\e"
+	
+	"\0\s[0]You should make sure you stay hydrated!\e"
+	
 	"\0\s[0]I'm so glad to see you, %(username)!\e"
 	
 	 "\![raiseother,Rusa,OnRusaWindowcheck,%(rusawindowcheck)]"
