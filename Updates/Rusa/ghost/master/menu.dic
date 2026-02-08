@@ -478,7 +478,7 @@ Select.TALKPOOR
 //If the user chooses to not have them speak. This is one case where you MIGHT want to make talktime equal something else, if you have a snappier way of saying the ghost won't talk. Make sure it flows well in your menus though, since it will be displayed in your config menu.
 Select.TALKNONE
 	{
- 		talktime = "...actually we won't talk at all"
+ 		talktime = "...actually dont talk at all"
 		aitalkinterval = 0
 		
 		"\0\s[0]..Okay, i wont speak.\e"
