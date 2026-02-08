@@ -25,6 +25,9 @@ SetAppGroups //set arrays for program groups. mostly so that its easier to add t
 
     SLIDES = "Microsoft PowerPoint,LibreOffice Impress"
     SLIDESexe = "powerpnt.exe,simpress.exe"
+	
+	MSG = "Discord,Windows Live Messenger"
+	MSGexe = "Discord.exe,msnmsgr.exe"
 }
 
 ProcessCheck //trying again with a process.dll SAORI because window_info isn't very reliable with a variety of software

@@ -123,6 +123,8 @@ RandomTalk : nonoverlap_pool
 	
 	"\0\s[0]I'm so glad to see you, %(username)!\e"
 	
+	"\0\s[0]I hope the weather outside is nice ^_^!\e"
+	
 	 "\![raiseother,Rusa,OnRusaWindowcheck,%(rusawindowcheck)]"
 	
 }
@@ -329,6 +331,8 @@ if ProcessCheck(MUSICexe,MUSIC) == 1
  "\0\s[0]Oh! You like music %(username)? How nice!\e"
  
  "\0\s[0]You have such great music taste, %(username)!\e"
+ 
+  "\0\s[0]What's your favorite music genre, %(username)?\![open,inputbox,OnMusicGenre,-1]\e"
 }
 
 
@@ -337,7 +341,24 @@ if ProcessCheck(ARTexe,ART) == 1
 	"\0\s[0]Ooh, You're an artist, %(username)? That's so cool!\e"
 	
 	"\0\s[0]Oooh draw me!! Draw RUSA!!!\e"
+	
+	"\0\s[0]You're such a great artist, %(username)!\e"
+	}
+	
+	if ProcessCheck(MSGexe,MSG) == 1
+	{
+	"\0\s[0]You have a messenger? You should share the RUSA! program with friends!\e"
 	}
 
 }
 
+OnMusicGenre
+{
+LikedGenre = reference0
+
+"\0\s[6]I also enjoy %(LikedGenre)!\e"
+
+"\0\s[6]%(LikedGenre)? Sound's interesting!\e"
+
+"\0\s[2]Wow, I've never heard of %(LikedGenre)! You should tell me more about it.\e"
+}
